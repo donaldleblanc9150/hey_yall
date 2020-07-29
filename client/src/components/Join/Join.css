@@ -53,6 +53,21 @@ html, body {
   .mt-20 {
     margin-top: 20px;
   }
+
+  .color-picker-wrapper{
+    background-color: white;
+    margin: 10px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .color-picker{
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+  }
+
   
   @media (min-width: 320px) and (max-width: 480px) {
     .joinOuterContainer {
