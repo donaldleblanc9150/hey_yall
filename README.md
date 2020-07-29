@@ -24,3 +24,24 @@ Our intention is to add:
 9). When you register take picture of the user
 
 10). Do not disturb/Mute for group chats
+
+utilize the installs below:
+NPM dependencies
+
+Please install:
+
+SERVER:
+npm i cors
+npm i nodemon
+npm i express
+npm socket.io
+
+
+CLIENT:
+install react (if you don’t have installed already)
+npm i react-router
+npm i socket.io-client
+npm i react-scroll
+npm i react-emoji
+npm i query-string
+
