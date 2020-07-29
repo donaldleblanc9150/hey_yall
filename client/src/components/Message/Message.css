@@ -65,3 +65,21 @@
   .backgroundLight {
     background: #F3F3F3;
   }
+
+  .chat-face-wrapper-cu, .chat-face-wrapper-ou{
+    position: relative;
+  }
+
+  .chat-face{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .chat-face-wrapper-cu .chat-face{
+
+  }
+  .chat-face-wrapper-ou .chat-face{
+
+  }
+  

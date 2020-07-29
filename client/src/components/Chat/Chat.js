@@ -13,6 +13,7 @@ let socket;
 const Chat = ({ location }) => {
     const [name, setName] = useState('');
     const [room, setRoom] = useState('');
+    const [color, setColor] = useState('');
     const [users, setUsers] = useState('');
     const [message, setMessage] = useState(''); 
     const [messages, setMessages] = useState([]); 
@@ -42,14 +43,14 @@ const Chat = ({ location }) => {
     // }, [ENDPOINT, location.search]);
 
     useEffect(() => {
-        const { name, room } = queryString.parse(location.search);
+        const { name, room, color } = queryString.parse(location.search);
 
         socket = io(ENDPOINT);
 
         setRoom(room);
         setName(name)
 
-        socket.emit('join', { name, room }, (error) => {
+        socket.emit('join', { name, room, color }, (error) => {
             if(error) {
                 alert(error);
             }
@@ -82,7 +83,7 @@ const Chat = ({ location }) => {
             <div className="container">
 
                 <InfoBar room={room} />
-                <Messages messages={messages} name={name} />
+                <Messages messages={messages} name={name} color={color} />
                 <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
             </div>
             <TextContainer users={users} />
