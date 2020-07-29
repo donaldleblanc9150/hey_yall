@@ -4,12 +4,15 @@
   "description": "Hey Ya'll social app is designed to provide social interaction between members in real time",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Donald LeBlanc",
+  "author": "Donald LeBlanc, Emad Hanna, Indika Boteju, Jenny Nguyen",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.9.25"
+    "mongoose": "^5.9.25",
+    "socket.io": "^2.3.0"
   }
 }
