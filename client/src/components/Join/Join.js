@@ -18,13 +18,13 @@ export default function SignIn() {
                 <div className="color-picker-wrapper">
                     <select className="color-picker" onChange={e => setColor(e.target.value)} style={{ backgroundColor: color }} >
                         <option value="transparent">Transparent</option>
-                        <option value="lightblue">Light Blue</option>
-                        <option value="lightcoral">lightcoral</option>
-                        <option value="lightcyan">lightcyan</option>
+                        <option value="lightblue">LightBlue</option>
+                        <option value="lightcoral">LightCoral</option>
+                        <option value="lightcyan">LightCyan</option>
                         <option value="lightgreen">lightgreen</option>
                         <option value="lightslategrey">lightslategrey</option>
-                        <option value="lightpink">lightpink</option>
-                        <option value="lightyellow">lightyellow</option>
+                        <option value="lightpink">lightPink</option>
+                        <option value="lightyellow">lightYellow</option>
                     </select>
                 </div>
                 <Link onClick={event => (!name || !room) ? event.preventDefault() : null} to={`/chat?name=${name}&room=${room}&color=${color}`}>
